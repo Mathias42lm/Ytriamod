@@ -1,0 +1,7 @@
+git init ==> Initialise le dépot
+git add . ==> ajoute tt les fichier
+git add .src ajoute le src
+git commit -m "Message a mettre" ==> commit
+git push -u origin main ==> permet de mettre a jour le github avec nos fichier
+git pull ==> sert a syncroniser ses fichier avec le github
+git log ==> Permet d'obtenir les autre commit
