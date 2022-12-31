@@ -22,7 +22,7 @@ public class RegisterBlocks {
 	
 	public static void init() {
 		testblock= new BlockBase(Material.iron).setBlockName("testblock").setCreativeTab(Main.ytriaTab).setBlockTextureName(Reference.MOD_ID+":testblock").setHardness(4);
-		Cokebase = new BlockSeeds().setBlockName("Cokebase").setBlockTextureName(Reference.MOD_ID+":cokebase");
+		Cokebase = new BlockSeeds().setBlockName("Cokebase").setBlockTextureName(Reference.MOD_ID+":cokebase").setHardness(5F);
 	}
 	
 	
