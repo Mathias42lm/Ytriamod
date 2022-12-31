@@ -5,5 +5,5 @@ import fr.mathias42lm.ytria.init.RegisterItems;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 
-public class BlockSeed extends BlockCrops {
+public class BlockSeeds extends BlockCrops {
 }

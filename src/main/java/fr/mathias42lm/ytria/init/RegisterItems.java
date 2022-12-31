@@ -26,7 +26,7 @@ public class RegisterItems {
 		carteid = new Item().setUnlocalizedName("carte-id").setMaxStackSize(1).setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID + ":carte_id");
 		permis = new Item().setUnlocalizedName("permis").setMaxStackSize(1).setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":permis");
 		Matraque = new ItemSwords(Ytriatool).setCreativeTab(Main.ytriaTab).setUnlocalizedName("Matraque").setTextureName(Reference.MOD_ID+":matraque");
-		Cokeseed = new ItemSeedsMod(RegisterBlocks.Cokebase, Blocks.farmland).setUnlocalizedName("Cokeseed").setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":cokeseed");
+		Cokeseed = new ItemSeeds(RegisterBlocks.Cokebase, Blocks.farmland).setUnlocalizedName("Cokeseed").setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":cokeseed");
 	}
 	
 	

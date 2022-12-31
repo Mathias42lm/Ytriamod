@@ -26,10 +26,10 @@ public class Main {
 	public static CreativeTabs ytriaTab = new YtriaTab("ytriaTab");
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent e) {
-		RegisterItems.init();
-		RegisterItems.register();
 		RegisterBlocks.init();
 		RegisterBlocks.register();
+		RegisterItems.init();
+		RegisterItems.register();
 		MinecraftForge.EVENT_BUS.register(new EventBreak());
 	}
 	
