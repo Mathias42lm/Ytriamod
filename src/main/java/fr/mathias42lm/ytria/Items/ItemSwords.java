@@ -1,4 +1,4 @@
-package fr.mathias42lm.ytria.init;
+package fr.mathias42lm.ytria.Items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSword;
