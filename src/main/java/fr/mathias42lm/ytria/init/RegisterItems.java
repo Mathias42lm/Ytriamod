@@ -20,6 +20,8 @@ public class RegisterItems {
 	public static Item Matraque;
 	public static Item Cokeseed;
 	public static Item Cokefeuille;
+	public static Item Cbdseed;
+	
 	public static ToolMaterial Ytriatool = EnumHelper.addToolMaterial("Ytria", 5, 100000, -2, -2, 0);
 	
 	
@@ -28,8 +30,9 @@ public class RegisterItems {
 		carteid = new Item().setUnlocalizedName("carte-id").setMaxStackSize(1).setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID + ":carte_id");
 		permis = new Item().setUnlocalizedName("permis").setMaxStackSize(1).setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":permis");
 		Matraque = new ItemSwords(Ytriatool).setCreativeTab(Main.ytriaTab).setUnlocalizedName("Matraque").setTextureName(Reference.MOD_ID+":matraque");
-		Cokeseed = new ItemSeedsMod(RegisterBlocks.Cokebase, Blocks.farmland).setUnlocalizedName("Cokeseed").setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":cokeseed");
+		Cokeseed = new ItemSeedsMod(RegisterBlocks.Cokebasef, Blocks.farmland).setUnlocalizedName("Cokeseed").setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":cokeseed");
 		Cokefeuille = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("Feuille_de_Coke").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cokefeuille");
+		Cbdseed = new ItemSeedsMod(RegisterBlocks.Cokebasem, Blocks.farmland).setUnlocalizedName("CBDseed").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cbdseed").setCreativeTab(Main.ytriaTab);
 	}
 	
 	
@@ -40,6 +43,7 @@ public class RegisterItems {
 		GameRegistry.registerItem(Matraque, "Matraque");
 		GameRegistry.registerItem(Cokeseed, "Cokeseed");
 		GameRegistry.registerItem(Cokefeuille, "cokefeuille");
+		GameRegistry.registerItem(Cbdseed, "cbdseed");
 		
 	}
 	
