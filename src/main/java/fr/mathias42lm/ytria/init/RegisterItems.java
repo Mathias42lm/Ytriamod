@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.common.util.EnumHelper;
+import scala.tools.nsc.backend.icode.TypeKinds.REFERENCE;
 
 public class RegisterItems {
 	public static Item coke;
@@ -21,7 +22,7 @@ public class RegisterItems {
 	public static Item Cokeseed;
 	public static Item Cokefeuille;
 	public static Item Cbdseed;
-	
+	public static Item Fouille;
 	public static ToolMaterial Ytriatool = EnumHelper.addToolMaterial("Ytria", 5, 100000, -2, -2, 0);
 	
 	
@@ -33,6 +34,7 @@ public class RegisterItems {
 		Cokeseed = new ItemSeedsMod(RegisterBlocks.Cokebasef, Blocks.farmland).setUnlocalizedName("Cokeseed").setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":cokeseed");
 		Cokefeuille = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("Feuille_de_Coke").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cokefeuille");
 		Cbdseed = new ItemSeedsMod(RegisterBlocks.Cokebasem, Blocks.farmland).setUnlocalizedName("CBDseed").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cbdseed").setCreativeTab(Main.ytriaTab);
+		Fouille = new Item().setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":fouille").setMaxStackSize(1).setUnlocalizedName("fouille");
 	}
 	
 	
@@ -44,7 +46,7 @@ public class RegisterItems {
 		GameRegistry.registerItem(Cokeseed, "Cokeseed");
 		GameRegistry.registerItem(Cokefeuille, "cokefeuille");
 		GameRegistry.registerItem(Cbdseed, "cbdseed");
-		
+		GameRegistry.registerItem(Fouille, "Batondefouille");
 	}
 	
 }
