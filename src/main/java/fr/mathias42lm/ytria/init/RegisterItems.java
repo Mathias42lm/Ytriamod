@@ -48,7 +48,6 @@ public class RegisterItems {
 		argent100 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("100").setTextureName(Reference.MOD_ID+":100");
 		argent500 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("500").setTextureName(Reference.MOD_ID+":500");
 		argent1000 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("1000").setTextureName(Reference.MOD_ID+":1000");
-		
 	}
 	
 	
