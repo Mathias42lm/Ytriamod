@@ -23,6 +23,9 @@ public class RegisterItems {
 	public static Item Cokefeuille;
 	public static Item Cbdseed;
 	public static Item Fouille;
+	public static Item encre;
+	public static Item battrie;
+	public static Item argent10,argent20,argent30,argent40,argent50,argent100,argent500,argent1000;
 	public static ToolMaterial Ytriatool = EnumHelper.addToolMaterial("Ytria", 5, 100000, -2, -2, 0);
 	
 	
@@ -35,6 +38,17 @@ public class RegisterItems {
 		Cokefeuille = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("Feuille_de_Coke").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cokefeuille");
 		Cbdseed = new ItemSeedsMod(RegisterBlocks.Cokebasem, Blocks.farmland).setUnlocalizedName("CBDseed").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cbdseed").setCreativeTab(Main.ytriaTab);
 		Fouille = new Item().setCreativeTab(Main.ytriaTab).setTextureName(Reference.MOD_ID+":fouille").setMaxStackSize(1).setUnlocalizedName("fouille");
+		encre = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("Encreprinter").setTextureName(Reference.MOD_ID+":encre");
+		battrie = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("Battrieprinter").setTextureName(Reference.MOD_ID+":battrieprinter").setMaxStackSize(1);
+		argent10 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("10").setTextureName(Reference.MOD_ID+":10");
+		argent20 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("20").setTextureName(Reference.MOD_ID+":20");
+		argent30 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("30").setTextureName(Reference.MOD_ID+":30");
+		argent40 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("40").setTextureName(Reference.MOD_ID+":40");
+		argent50 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("50").setTextureName(Reference.MOD_ID+":50");
+		argent100 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("100").setTextureName(Reference.MOD_ID+":100");
+		argent500 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("500").setTextureName(Reference.MOD_ID+":500");
+		argent1000 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("1000").setTextureName(Reference.MOD_ID+":1000");
+		
 	}
 	
 	
@@ -47,6 +61,17 @@ public class RegisterItems {
 		GameRegistry.registerItem(Cokefeuille, "cokefeuille");
 		GameRegistry.registerItem(Cbdseed, "cbdseed");
 		GameRegistry.registerItem(Fouille, "Batondefouille");
+		GameRegistry.registerItem(encre,"encreprinter" );
+		GameRegistry.registerItem(battrie,"battrieprinter" );
+		GameRegistry.registerItem(argent10,"argent10" );
+		GameRegistry.registerItem(argent20,"argent20" );
+		GameRegistry.registerItem(argent30,"argent30" );
+		GameRegistry.registerItem(argent40, "argent40");
+		GameRegistry.registerItem(argent50, "argent50");
+		GameRegistry.registerItem(argent100,"argent100");
+		GameRegistry.registerItem(argent500,"argent500");
+		GameRegistry.registerItem(argent1000, "argent1000");
+		
 	}
 	
 }
