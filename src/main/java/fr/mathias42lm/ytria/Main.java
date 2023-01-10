@@ -2,12 +2,13 @@ package fr.mathias42lm.ytria;
 
 import org.lwjgl.opengl.Display;
 
+import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import fr.mathias42lm.ytria.event.EventBreak;
+import cpw.mods.fml.common.registry.GameRegistry;
 import fr.mathias42lm.ytria.init.RegisterBlocks;
 import fr.mathias42lm.ytria.init.RegisterItems;
 import fr.mathias42lm.ytria.proxy.CommonProxy;
@@ -30,7 +31,7 @@ public class Main {
 		RegisterBlocks.register();
 		RegisterItems.init();
 		RegisterItems.register();
-		MinecraftForge.EVENT_BUS.register(new EventBreak());
+    	
 	}
 	
 	@Mod.EventHandler

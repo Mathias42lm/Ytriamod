@@ -9,8 +9,12 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class BlockSeedscokem extends BlockCrops {
-    protected Item func_149865_P()
+	protected Item func_149866_i() {
+		return null;
+	}
+    
+	protected Item func_149865_P()
     {
-        return RegisterItems.coke;
+        return RegisterItems.cbd;
     }
 }
