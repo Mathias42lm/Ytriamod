@@ -4,11 +4,6 @@ public class CommonProxy
 {
     public void registerRender()
     {
-
-    }
-
-    public void registerKeyBinding()
-    {
-
+        System.out.println("méthode côté serveur");
     }
 }

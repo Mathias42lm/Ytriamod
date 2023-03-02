@@ -22,15 +22,15 @@ public class Main {
 	public static Main instance;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
-	public static CommonProxy CommonProxy ;
+	public static CommonProxy CommonProxy;
 	
 	public static CreativeTabs ytriaTab = new YtriaTab("ytriaTab");
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent e) {
-		RegisterBlocks.init();
-		RegisterBlocks.register();
 		RegisterItems.init();
 		RegisterItems.register();
+		RegisterBlocks.init();
+		RegisterBlocks.register();
     	
 	}
 	
@@ -41,10 +41,7 @@ public class Main {
 	
 	@Mod.EventHandler
 	public static void init(FMLInitializationEvent e) {
-    	if(e.getSide().isClient()) 
-    		Display.setTitle("Ytria");
-    		
-		
+		CommonProxy.registerRender();
 	}
 	
 }

@@ -26,7 +26,12 @@ public class RegisterItems {
 	public static Item encre;
 	public static Item battrie;
 	public static Item cbd;
+	public static Item ppa;
+	public static Item ppamili;
+	public static Item permischasse;
 	public static Item argent10,argent20,argent30,argent40,argent50,argent100,argent500,argent1000,fauxargent20;
+	public static Item tablet, pince, info;
+	
 	public static ToolMaterial Ytriatool = EnumHelper.addToolMaterial("Ytria", 5, 100000, -2, -2, 0);
 	
 	
@@ -51,6 +56,13 @@ public class RegisterItems {
 		argent1000 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("1000").setTextureName(Reference.MOD_ID+":1000");
 		cbd = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("cbd").setMaxStackSize(16).setTextureName(Reference.MOD_ID+":cbd");
 		fauxargent20 = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("20faux").setTextureName(Reference.MOD_ID+":20faux");
+		ppa = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("ppa").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":ppa");
+		ppamili = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("ppamili").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":ppamili");
+		permischasse = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("permis_de_chasse").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":permiddechasse");
+		tablet = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("tablet").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":tablet");
+		pince = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("pince").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":pince");
+		info = new Item().setCreativeTab(Main.ytriaTab).setUnlocalizedName("info").setMaxStackSize(1).setTextureName(Reference.MOD_ID+":info");
+	
 	}
 	
 	
@@ -75,7 +87,12 @@ public class RegisterItems {
 		GameRegistry.registerItem(argent1000, "argent1000");
 		GameRegistry.registerItem(fauxargent20, "fauxargent20");
 		GameRegistry.registerItem(cbd, "cbd");
-		
+		GameRegistry.registerItem(ppa,"ppa");
+		GameRegistry.registerItem(ppamili,"ppamili");
+		GameRegistry.registerItem(permischasse, "permischasse");
+		GameRegistry.registerItem(tablet,"tablet");
+		GameRegistry.registerItem(pince,"pince");
+		GameRegistry.registerItem(info,"info");
 	}
 	
 }

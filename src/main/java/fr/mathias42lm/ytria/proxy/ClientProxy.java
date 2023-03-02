@@ -10,20 +10,9 @@ import net.minecraft.client.settings.KeyBinding;
 
 public class ClientProxy extends CommonProxy
 {
-    public static int tesrRenderId;
-    public static KeyBinding playerListKey = new KeyBinding("modtutoriel.playerList", Keyboard.KEY_N, "key.categories.misc");
-
-    @Override
+	@Override
     public void registerRender()
     {
-
-
-        tesrRenderId = RenderingRegistry.getNextAvailableRenderId();
+        System.out.println("méthode côté client");
     }
-
-    @Override
-    public void registerKeyBinding()
-    {
-        ClientRegistry.registerKeyBinding(playerListKey);
-    }
-    }
+}
